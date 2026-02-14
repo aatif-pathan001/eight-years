@@ -1,0 +1,7 @@
+{
+  "name": "Eight Years. Still You.",
+  "description": "A cinematic, intimate, and elegant 8th Valentine's Day tribute website featuring smooth transitions, heart particles, and a romantic journey of love.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
