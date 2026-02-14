@@ -9,6 +9,7 @@ const motion = m as any;
 const MusicPlayer: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [audioSrc] = useState<string>("song.mp3");
 
   const togglePlay = () => {
     if (audioRef.current) {
@@ -58,7 +59,7 @@ const MusicPlayer: React.FC = () => {
       <audio
         ref={audioRef}
         loop
-        src="song.mp3" // Placeholder romantic-style instrumental
+        src={audioSrc} // Placeholder romantic-style instrumental
       />
     </motion.div>
   );
